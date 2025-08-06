@@ -17,6 +17,14 @@ describe('MathLib', () => {
     });
   });
 
+  describe('multiply', () => {
+    it('multiply 4 times 4', () => {
+      const mathLib = new MathLib();
+      const result = mathLib.multiply(4, 4);
+      expect(result).toBe(16);
+    });
+  });
+  
   describe('fibonacci', () => {
     it('generates a valid fibonacci sequence', () => {
       const mathLib = new MathLib();
